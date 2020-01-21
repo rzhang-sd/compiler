@@ -18,25 +18,25 @@ public class Token {
 		this.source = source;
 		this.lineNum = source.getLineNum();
 		this.position = source.getCurrentPos();
-		
+
 		extract();
 	}
-	
+
 	protected void extract() throws Exception {
 		text = Character.toString(currentChar());
 		value = null;
 		nextChar();
 	}
-	
+
 	protected char currentChar() throws Exception {
 		return source.currentChar();
 	}
-	
+
 	protected char nextChar() throws Exception {
 		return source.nextChar();
 	}
 
-	// return next char from the source without moving forward 
+	// return next char from the source without moving forward
 	protected char peekChar() throws Exception {
 		return source.peekChar();
 	}

@@ -19,10 +19,10 @@ public abstract class Scanner {
 	}
 
 	public char currentChar() throws Exception {
-	    return source.currentChar();
+		return source.currentChar();
 	}
 
-	public char nextChar() throws Exception { 
+	public char nextChar() throws Exception {
 		return source.nextChar();
 	}
 
